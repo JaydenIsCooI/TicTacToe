@@ -193,7 +193,7 @@ public class Game
     public void tie()
     {
         System.out.println(line);
-        System.out.println("Its A Tie!");
+        System.out.println("It's a Tie!");
         System.out.println(line);
     }
 
