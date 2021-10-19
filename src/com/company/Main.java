@@ -10,7 +10,10 @@ public class Main
 
         Game q = new Game();
         q.Name();
-        q.printBoard();
+        q.play();
+        q.play();
+        q.play();
+        q.play();
         q.play();
 
 
