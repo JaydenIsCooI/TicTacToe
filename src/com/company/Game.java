@@ -24,6 +24,7 @@ public class Game
     String J = " ";
     String P1;
     String P2;
+    int i = 0;
     String line = ("------------------------------------------------------------------------------");
     String numBoard = "                                                   Col:1   Col:2   Col:3\n" +
             "                                           Row 1:    " + a + "   |   " + b + "   |   " + c + "  \n" +
@@ -54,7 +55,7 @@ public class Game
         System.out.println(line);
     }
 
-    public void play()
+    public void play1()
     {
         System.out.println(numBoard);
         Scanner in = new Scanner(System.in);
@@ -103,9 +104,13 @@ public class Game
         {
             System.out.println("That is an invalid number\n" + line);
         }
+    }
 
+    public void play2()
+    {
         System.out.println(numBoard);
         System.out.println(line);
+        Scanner in = new Scanner(System.in);
         System.out.print(P2 + ", Enter Your Number :: ");
         String p2 = in.nextLine();
         System.out.println(line);
@@ -151,4 +156,45 @@ public class Game
             System.out.println("That is an invalid number\n" + line);
         }
     }
+
+    public void getWinner()
+    {
+        if (A.equals("X") && B.equals("X") && C.equals("X") || D.equals("X") && E.equals("X") && F.equals("X") ||
+                G.equals("X") && H.equals("X") && J.equals("X") || A.equals("X") && D.equals("X") && G.equals("X") ||
+                B.equals("X") && E.equals("X") && H.equals("X") || C.equals("X") && F.equals("X") && J.equals("X") ||
+                A.equals("X") && E.equals("X") && J.equals("X") || C.equals("X") && E.equals("X") && G.equals("X"))
+        {
+            i++;
+            System.out.println(line);
+            System.out.println(P1 + " Is the Winner!");
+            System.out.println(line);
+        }
+        if (A.equals("O") && B.equals("O") && C.equals("O") || D.equals("O") && E.equals("O") && F.equals("O") ||
+                G.equals("O") && H.equals("O") && J.equals("O") || A.equals("O") && D.equals("O") && G.equals("O") ||
+                B.equals("O") && E.equals("O") && H.equals("O") || C.equals("O") && F.equals("O") && J.equals("O") ||
+                A.equals("O") && E.equals("O") && J.equals("O") || C.equals("O") && E.equals("O") && G.equals("O"))
+        {
+            i++;
+            System.out.println(line);
+            System.out.println(P2 + " Is the Winner!");
+            System.out.println(line);
+        }
+    }
+
+    public void exit()
+    {
+        if (i == 1)
+        {
+            System.exit(0);
+        }
+
+    }
+
+    public void tie()
+    {
+        System.out.println(line);
+        System.out.println("Its A Tie!");
+        System.out.println(line);
+    }
+
 }

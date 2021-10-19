@@ -10,12 +10,29 @@ public class Main
 
         Game q = new Game();
         q.Name();
-        q.play();
-        q.play();
-        q.play();
-        q.play();
-        q.play();
-
-
+        q.play1();
+        q.getWinner();
+        q.play2();
+        q.getWinner();
+        q.play1();
+        q.getWinner();
+        q.play2();
+        q.getWinner();
+        q.play1();
+        q.getWinner();
+        q.exit();
+        q.play2();
+        q.getWinner();
+        q.exit();
+        q.play1();
+        q.getWinner();
+        q.exit();
+        q.play2();
+        q.getWinner();
+        q.exit();
+        q.play1();
+        q.getWinner();
+        q.exit();
+        q.tie();
     }
 }
