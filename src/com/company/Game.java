@@ -35,14 +35,12 @@ public class Game
 
     public String getBoard()
     {
-        String Board = "        Col:1   Col:2   Col:3\n" +
+        return "        Col:1   Col:2   Col:3\n" +
                 "Row 1:    " + A + "  |   " + B + "   |  " + C + "  \n" +
                 "       ----------------------\n" +
                 "Row 2:    " + D + "  |   " + E + "   |  " + F + "\n" +
                 "       ----------------------\n" +
                 "Row 3:    " + G + "  |   " + H + "   |  " + J;
-
-        return Board;
     }
 
     public void Name()
@@ -64,45 +62,57 @@ public class Game
         String p1 = in.nextLine();
         System.out.println(line);
 
-        if (p1.equals(a))
+        if (p1.equals(""))
+        {
+            System.out.println("That is an Invalid Number!\n" + line);
+        } else if (p1.equals(a))
         {
             A = "X";
+            a = "";
             System.out.println(getBoard());
         } else if (p1.equals(b))
         {
             B = "X";
+            b = "";
             System.out.println(getBoard());
         } else if (p1.equals(c))
         {
             C = "X";
+            c = "";
             System.out.println(getBoard());
         } else if (p1.equals(d))
         {
             D = "X";
+            d = "";
             System.out.println(getBoard());
         } else if (p1.equals(e))
         {
             E = "X";
+            e = "";
             System.out.println(getBoard());
         } else if (p1.equals(f))
         {
             F = "X";
+            f = "";
             System.out.println(getBoard());
         } else if (p1.equals(g))
         {
             G = "X";
+            g = "";
             System.out.println(getBoard());
         } else if (p1.equals(h))
         {
             H = "X";
+            h = "";
             System.out.println(getBoard());
         } else if (p1.equals(j))
         {
             J = "X";
+            j = "";
             System.out.println(getBoard());
         } else
         {
-            System.out.println("That is an invalid number\n" + line);
+            System.out.println("That is an Invalid Number!\n" + line);
         }
     }
 
@@ -115,41 +125,53 @@ public class Game
         String p2 = in.nextLine();
         System.out.println(line);
 
-        if (p2.equals(a))
+        if (p2.equals(""))
+        {
+            System.out.println("That is an Invalid Number!\n" + line);
+        } else if (p2.equals(a))
         {
             A = "O";
+            a = "";
             System.out.println(getBoard());
         } else if (p2.equals(b))
         {
             B = "O";
+            b = "";
             System.out.println(getBoard());
         } else if (p2.equals(c))
         {
             C = "O";
+            c = "";
             System.out.println(getBoard());
         } else if (p2.equals(d))
         {
             D = "O";
+            d = "";
             System.out.println(getBoard());
         } else if (p2.equals(e))
         {
             E = "O";
+            e = "";
             System.out.println(getBoard());
         } else if (p2.equals(f))
         {
             F = "O";
+            f = "";
             System.out.println(getBoard());
         } else if (p2.equals(g))
         {
             G = "O";
+            g = "";
             System.out.println(getBoard());
         } else if (p2.equals(h))
         {
             H = "O";
+            h = "";
             System.out.println(getBoard());
         } else if (p2.equals(j))
         {
             J = "O";
+            j = "";
             System.out.println(getBoard());
         } else
         {
