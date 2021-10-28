@@ -55,127 +55,158 @@ public class Game
 
     public void play1()
     {
-        System.out.println(numBoard);
-        Scanner in = new Scanner(System.in);
-        System.out.println(line);
-        System.out.print(P1 + ", Enter Your Number :: ");
-        String p1 = in.nextLine();
-        System.out.println(line);
+        int hi = 1;
+        while (hi == 1)
+        {
+            System.out.println(numBoard);
+            Scanner in = new Scanner(System.in);
+            System.out.println(line);
+            System.out.print(P1 + ", Enter Your Number :: ");
+            String p1 = in.nextLine();
+            System.out.println(line);
 
-        if (p1.equals(""))
-        {
-            System.out.println("That is an Invalid Number!\n" + line);
-        } else if (p1.equals(a))
-        {
-            A = "X";
-            a = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(b))
-        {
-            B = "X";
-            b = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(c))
-        {
-            C = "X";
-            c = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(d))
-        {
-            D = "X";
-            d = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(e))
-        {
-            E = "X";
-            e = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(f))
-        {
-            F = "X";
-            f = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(g))
-        {
-            G = "X";
-            g = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(h))
-        {
-            H = "X";
-            h = "";
-            System.out.println(getBoard());
-        } else if (p1.equals(j))
-        {
-            J = "X";
-            j = "";
-            System.out.println(getBoard());
-        } else
-        {
-            System.out.println("That is an Invalid Number!\n" + line);
+            if (p1.equals(""))
+            {
+                System.out.println("That is an Invalid Number!\n" + line);
+                System.out.println(getBoard());
+            } else if (p1.equals(a))
+            {
+                A = "X";
+                a = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(b))
+            {
+                B = "X";
+                b = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(c))
+            {
+                C = "X";
+                c = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(d))
+            {
+                D = "X";
+                d = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(e))
+            {
+                E = "X";
+                e = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(f))
+            {
+                F = "X";
+                f = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(g))
+            {
+                G = "X";
+                g = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(h))
+            {
+                H = "X";
+                h = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p1.equals(j))
+            {
+                J = "X";
+                j = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else
+            {
+                System.out.println("That is an Invalid Number!\n" + line);
+                System.out.println(getBoard());
+            }
         }
     }
 
     public void play2()
     {
-        System.out.println(numBoard);
-        System.out.println(line);
-        Scanner in = new Scanner(System.in);
-        System.out.print(P2 + ", Enter Your Number :: ");
-        String p2 = in.nextLine();
-        System.out.println(line);
+        int hi = 1;
 
-        if (p2.equals(""))
+        while(hi == 1)
         {
-            System.out.println("That is an Invalid Number!\n" + line);
-        } else if (p2.equals(a))
-        {
-            A = "O";
-            a = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(b))
-        {
-            B = "O";
-            b = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(c))
-        {
-            C = "O";
-            c = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(d))
-        {
-            D = "O";
-            d = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(e))
-        {
-            E = "O";
-            e = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(f))
-        {
-            F = "O";
-            f = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(g))
-        {
-            G = "O";
-            g = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(h))
-        {
-            H = "O";
-            h = "";
-            System.out.println(getBoard());
-        } else if (p2.equals(j))
-        {
-            J = "O";
-            j = "";
-            System.out.println(getBoard());
-        } else
-        {
-            System.out.println("That is an invalid number\n" + line);
+            System.out.println(numBoard);
+            System.out.println(line);
+            Scanner in = new Scanner(System.in);
+            System.out.print(P2 + ", Enter Your Number :: ");
+            String p2 = in.nextLine();
+            System.out.println(line);
+
+            if (p2.equals(""))
+            {
+                System.out.println("That is an Invalid Number!\n" + line);
+                System.out.println(getBoard());
+            } else if (p2.equals(a))
+            {
+                A = "O";
+                a = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(b))
+            {
+                B = "O";
+                b = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(c))
+            {
+                C = "O";
+                c = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(d))
+            {
+                D = "O";
+                d = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(e))
+            {
+                E = "O";
+                e = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(f))
+            {
+                F = "O";
+                f = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(g))
+            {
+                G = "O";
+                g = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(h))
+            {
+                H = "O";
+                h = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else if (p2.equals(j))
+            {
+                J = "O";
+                j = "";
+                System.out.println(getBoard());
+                hi ++;
+            } else
+            {
+                System.out.println("That is an invalid number\n" + line);
+                System.out.println(getBoard());
+            }
         }
     }
 
